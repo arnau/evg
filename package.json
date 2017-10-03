@@ -1,0 +1,27 @@
+{
+  "name": "evg",
+  "version": "0.1.0",
+  "description": "Converter from SVG to Elm (elm-svg)",
+  "main": "index.js",
+  "author": "Arnau Siches",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "build": "webpack -p --env.production && cp index.html dist/",
+    "install": "elm-package install",
+    "test": "elm-test"
+  },
+  "devDependencies": {
+    "elm": "^0.18.0",
+    "elm-css-webpack-loader": "^3.2.0",
+    "elm-format": "^0.6.1-alpha",
+    "elm-hot-loader": "^0.5.4",
+    "elm-test": "^0.18.8",
+    "elm-webpack-loader": "^4.3.1",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
