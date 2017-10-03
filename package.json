@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot",
     "build": "webpack -p --env.production && cp index.html dist/",
-    "install": "elm-package install",
+    "postinstall": "elm-package install -y",
     "test": "elm-test"
   },
   "devDependencies": {
